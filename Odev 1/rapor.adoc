@@ -1,4 +1,13 @@
 
+ifdef::evn-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+
 '''
 === Pigeonhole principle :
  Pigeonhole principle is commonly used in mathematics. pigeonhole principle states thatif  n items are put into m containers, 
@@ -8,13 +17,7 @@ The example to prove that more than one student can have the same alphabets if t
 the number of alphabets(n>m).
 
 
-ifdef::evn-github[]
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
+
 
 [WARNING]
 ====
