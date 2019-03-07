@@ -1,0 +1,67 @@
+
+'''
+=== Pigeonhole principle :
+ Pigeonhole principle is commonly used in mathematics. pigeonhole principle states thatif  n items are put into m containers, 
+ with  n>m, then at least one container must contain more than one item.I am going to prove this principle 
+ by applying one of the example and solve it by python program using conditional statements. 
+The example to prove that more than one student can have the same alphabets if the number of student (n) is more than
+the number of alphabets(n>m).
+
+
+ifdef::evn-github[]
+:tip-caption: : bulb:
+:note-caption: : information_source:
+:important-caption: : heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: : warning:
+endif: : []
+
+[CAUTION]
+====
+
+Example:
+Assume that we have n number of students inside the class , according to Pigeonhole principle,  prove that more than one student
+have their  names started with the same alphabets?
+
+====
+
+[NOTE]
+====
+
+There are n number of students(Pigeon) inside the class and there are 26 english alphabets(m) (pigeonholes).
+ By applying Pigeonhole principle
+1- If the number of students is less than or equal the number of alphabets( n<=m ),Pigeonhole principle can not be applied.
+2- If the number of students is greater than the number of alphabets( n>m ),Pigeonhole principle can be applied. However
+more than one student will have their names starting with the same alphabets.
+
+====
+
+'''
+
+.odev1.py
+[source,python]
+----
+
+print("Enter number of students inside the class")
+students = int(input())
+if students < 0:
+    print("Wrong Entry: Try again")
+    exit(1)
+print("The Number of english alphabets is 26")
+if students < 26:
+    print("Pigeon rule does not apply:n<26")
+elif students == 26:
+    print("Pigeon rule does not apply")
+    print("stuents  may or may not have same alphabets")
+elif students > 26:
+    print("Pigeon rule applies:n>m")
+    result1 = students % 26
+    result = float(students // 26)
+    if result1 == 0:
+        print(" Minimum number of students having the same alphbets:\n", result)
+    else:
+        print("Minimum number of people having the same alphbets:\n ", result + 1)
+else:
+    print("Invalid Input: Please select again")
+
+----
