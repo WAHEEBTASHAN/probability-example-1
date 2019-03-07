@@ -16,7 +16,7 @@ endif::[]
 The example to prove that more than one student can have the same alphabets if the number of student (n) is more than
 the number of alphabets(n>m).
 
-
+image::image.jpg[540,300]
 
 
 [WARNING]
